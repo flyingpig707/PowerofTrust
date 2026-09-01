@@ -17,8 +17,8 @@ jobs:
       - name: Validate contribution packages
         run: python3 scripts/validate_contributions.py
       - name: Enforce contributor boundary
-        if: ${{ !contains(github.event.pull_request.labels.*.name, 'editorial') }}
+        if: ${{ !(github.event.pull_request.user.login == github.repository_owner && startsWith(github.event.pull_request.title, '[editorial]')) }}
         run: python3 scripts/validate_pull_request.py --base-ref ${{ github.event.pull_request.base.sha }} --mode contributor --pr-author "${{ github.event.pull_request.user.login }}"
       - name: Enforce editorial boundary
-        if: ${{ contains(github.event.pull_request.labels.*.name, 'editorial') }}
+        if: ${{ github.event.pull_request.user.login == github.repository_owner && startsWith(github.event.pull_request.title, '[editorial]') }}
         run: python3 scripts/validate_pull_request.py --base-ref ${{ github.event.pull_request.base.sha }} --mode editorial

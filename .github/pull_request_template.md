@@ -10,7 +10,7 @@
 - [ ] tool
 - [ ] rewrite
 - [ ] new-section
-- [ ] editorial（仅维护者使用，并添加 `editorial` 标签）
+- [ ] editorial（仅仓库所有者使用，PR 标题以 `[editorial]` 开头）
 
 ## 身份与授权
 

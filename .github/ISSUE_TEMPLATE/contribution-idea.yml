@@ -1,7 +1,6 @@
 name: 共同写作提案
 description: 在准备完整投稿前，讨论勘误、证据、案例、工具、改写或新章节想法
 title: "[共写提案] "
-labels: ["coauthor-proposal"]
 body:
   - type: dropdown
     id: type

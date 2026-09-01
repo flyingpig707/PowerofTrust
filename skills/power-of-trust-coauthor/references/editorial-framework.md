@@ -59,4 +59,3 @@ Use these meanings consistently:
 - `incorporated`: a separate editorial Pull Request has merged material into `book/`.
 
 Do not describe a proposal as author-approved, selected, incorporated, or published unless the repository records that state.
-

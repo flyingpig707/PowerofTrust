@@ -35,4 +35,3 @@
 - `incorporated`：已通过独立编辑 PR 进入正式书稿。
 
 自动化不得自行把状态改为 `selected` 或 `incorporated`，不得自动合并外部贡献。
-

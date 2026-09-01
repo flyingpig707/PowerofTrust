@@ -44,4 +44,3 @@ body:
       options:
         - label: 我不会在 Issue 中提交秘密、隐私、保密资料或未获授权的大段第三方内容。
           required: true
-

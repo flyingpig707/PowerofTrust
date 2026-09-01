@@ -21,6 +21,23 @@
 - GitHub：本仓库用于版本记录、问题反馈、案例补充与内容共建
 - [课程与社群](https://appybdoup4a9525.h5.xiaoeknow.com/)
 
+## 与 Agent 共同写作
+
+把下面这句话交给 Codex、Claude Code 或其他具备 GitHub 能力的 Agent：
+
+```text
+阅读 https://github.com/flyingpig707/PowerofTrust/tree/main/skills/power-of-trust-coauthor 并参与《信任力》共同写作
+```
+
+Agent 会帮助你阅读书稿和规则，选择勘误、证据、案例、工具、改写或新章节提案，生成结构化投稿包，完成本地校验并准备 Pull Request。
+
+投稿先进入 [`contributions/`](contributions/) 公开提案库；自动检查通过只表示格式合规，不代表作者认可。只有作者或维护者通过独立的编辑 Pull Request 采用后，内容才会进入 `book/` 正式书稿。
+
+- [Agent 共写 Skill](skills/power-of-trust-coauthor/)
+- [可参与任务](TASKS.md)
+- [共同写作治理](GOVERNANCE.md)
+- [贡献授权](CONTRIBUTOR-TERMS.md)
+
 ## 阅读
 
 - [封面与全书目录](book/00-封面.md)
@@ -45,4 +62,4 @@
 
 本仓库暂未附加开源许可证。公开可读不等同于自动授权复制、改编或商业使用；具体许可方式待作者确认。
 
-详见 [参与共建](CONTRIBUTING.md) 与 [版本记录](CHANGELOG.md)。
+详见 [参与共建](CONTRIBUTING.md)、[共同写作治理](GOVERNANCE.md)、[贡献授权](CONTRIBUTOR-TERMS.md) 与 [版本记录](CHANGELOG.md)。

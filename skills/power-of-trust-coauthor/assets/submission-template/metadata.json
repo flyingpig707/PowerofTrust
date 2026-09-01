@@ -1,0 +1,39 @@
+{
+  "format_version": "1.0",
+  "title": "{{TITLE}}",
+  "slug": "{{SLUG}}",
+  "contribution_type": "{{TYPE}}",
+  "affected_chapter": "{{CHAPTER}}",
+  "status": "proposed",
+  "human_contributor": {
+    "github_login": "{{GITHUB_LOGIN}}",
+    "accepted_originality_statement": false,
+    "accepted_project_use_authorization": false
+  },
+  "agent": {
+    "name": "{{AGENT_NAME}}"
+  },
+  "summary": "REPLACE: one-sentence summary",
+  "change_rationale": "REPLACE: why this improves the book",
+  "claims": [
+    {
+      "id": "claim-1",
+      "classification": "fact",
+      "text": "REPLACE: material claim",
+      "source_ids": ["source-1"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "publisher": "REPLACE",
+      "title": "REPLACE",
+      "url": "https://example.com/replace-me",
+      "published_or_retrieved": "YYYY-MM-DD",
+      "supports": "REPLACE: what this source directly supports",
+      "limitations": "REPLACE: scope, uncertainty, or reuse limit"
+    }
+  ],
+  "submission_does_not_guarantee_adoption": true
+}
+

@@ -1,0 +1,47 @@
+name: 共同写作提案
+description: 在准备完整投稿前，讨论勘误、证据、案例、工具、改写或新章节想法
+title: "[共写提案] "
+labels: ["coauthor-proposal"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 贡献类型
+      options:
+        - correction
+        - evidence
+        - case
+        - tool
+        - rewrite
+        - new-section
+    validations:
+      required: true
+  - type: input
+    id: chapter
+    attributes:
+      label: 影响章节或位置
+      placeholder: 例如 06-GEO之战 / 附录工具三 / 建议新增小节
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题与建议
+      description: 说明现状、建议内容和给读者带来的价值。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据、来源和限制
+      description: 给出链接、日期、直接支持的主张及不确定性；没有外部证据时说明原因。
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 内容确认
+      options:
+        - label: 我不会在 Issue 中提交秘密、隐私、保密资料或未获授权的大段第三方内容。
+          required: true
+

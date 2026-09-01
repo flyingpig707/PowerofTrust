@@ -1,0 +1,24 @@
+name: Validate contribution
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate contribution packages
+        run: python3 scripts/validate_contributions.py
+      - name: Enforce contributor boundary
+        if: ${{ !contains(github.event.pull_request.labels.*.name, 'editorial') }}
+        run: python3 scripts/validate_pull_request.py --base-ref ${{ github.event.pull_request.base.sha }} --mode contributor --pr-author "${{ github.event.pull_request.user.login }}"
+      - name: Enforce editorial boundary
+        if: ${{ contains(github.event.pull_request.labels.*.name, 'editorial') }}
+        run: python3 scripts/validate_pull_request.py --base-ref ${{ github.event.pull_request.base.sha }} --mode editorial

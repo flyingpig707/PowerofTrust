@@ -1,0 +1,14 @@
+{
+  "name": "power-of-trust-book",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev book --host 127.0.0.1",
+    "docs:build": "vitepress build book",
+    "docs:preview": "vitepress preview book --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

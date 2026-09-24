@@ -40,6 +40,7 @@ Agent 会帮助你阅读书稿和规则，选择勘误、证据、案例、工�
 
 ## 阅读
 
+- [V0.2阅读站首页](book/index.md)
 - [V0.2 三部十二章目录](book/00-V0.2三部十二章目录.md)
 - [封面与全书目录](book/00-封面.md)
 - [前言：信任缘起——AI时代品牌竞争新规则](book/01-前言%20信任缘起AI时代品牌竞争新规则.md)
@@ -64,3 +65,7 @@ Agent 会帮助你阅读书稿和规则，选择勘误、证据、案例、工�
 本仓库暂未附加开源许可证。公开可读不等同于自动授权复制、改编或商业使用；具体许可方式待作者确认。
 
 详见 [参与共建](CONTRIBUTING.md)、[共同写作治理](GOVERNANCE.md)、[贡献授权](CONTRIBUTOR-TERMS.md) 与 [版本记录](CHANGELOG.md)。
+
+## 阅读站开发
+
+本仓库使用VitePress直接将 `book/` 中的Markdown生成为阅读网站，书稿与网页不再维护两份正文。部署与EdgeOne Pages配置见 [DEPLOYMENT.md](DEPLOYMENT.md)。

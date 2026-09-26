@@ -1,0 +1,116 @@
+{
+  "format_version": "1.0",
+  "title": "工具一 AI认知基线的平台清单：补充2026年可核验来源，并修正 DeepSeek 缺口与文心一言未进榜问题",
+  "slug": "baseline-platform-evidence-2026",
+  "contribution_type": "evidence",
+  "affected_chapter": "14-附录 落地工具",
+  "status": "proposed",
+  "human_contributor": {
+    "github_login": "flyingpig707",
+    "accepted_originality_statement": true,
+    "accepted_project_use_authorization": true
+  },
+  "agent": {
+    "name": "WorkBuddy"
+  },
+  "summary": "为附录工具一步骤2的AI平台建议清单补充 QuestMobile 与 CNNIC 两个可核验原始来源，指出该清单遗漏月活第三的 DeepSeek、对文心一言采用了无来源且未进榜的月活数据、对 Kimi 的定位已与当前用户规模不符，并建议把清单改为标注数据日期、可独立更新的结构。",
+  "change_rationale": "工具一是全书信任力建设的第一步，读者据此决定把测试资源投到哪些平台。当前清单中至少三项论断与2026年可核验数据不符或缺乏可核验来源，会把读者的预算和人力导向覆盖率偏低的入口。更重要的是，本书自身主张数据真与信源真，工具清单却既未标注数据日期也未给出来源，读者无从判断其时效性。修正后，读者能按当前格局选对平台，并获得一个随格局变化更新清单的机制，而不是依赖一份会持续过时的静态名单。",
+  "claims": [
+    {
+      "id": "claim-1",
+      "classification": "fact",
+      "text": "按 QuestMobile《2026年AI应用市场发展半年报》口径，2026年6月中国AI原生App月活跃用户规模前三名依次为豆包3.82亿、千问1.67亿、DeepSeek 1.30亿；该榜单注明不含手机厂商预装AI助手。",
+      "source_ids": ["source-1"]
+    },
+    {
+      "id": "claim-2",
+      "classification": "fact",
+      "text": "同一榜单中，元宝月活4,984万位列第四，Kimi月活729万位列第九，并被归入综合助手赛道；Kimi 的用户规模不足千万。",
+      "source_ids": ["source-1"]
+    },
+    {
+      "id": "claim-3",
+      "classification": "fact",
+      "text": "同一报告口径下，2026年6月手机厂商AI应用月活为7.55亿，规模高于AI原生App的4.99亿；PC网页端AI应用月活1.72亿，同比下降22.8%。",
+      "source_ids": ["source-1"]
+    },
+    {
+      "id": "claim-4",
+      "classification": "fact",
+      "text": "CNNIC 第57次《中国互联网络发展状况统计报告》（2026年2月发布，调查数据截至2025年12月）显示，中国生成式人工智能产品用户规模为6.02亿，较上年增长141.7%；同期中国网民规模为11.25亿。",
+      "source_ids": ["source-2"]
+    },
+    {
+      "id": "claim-5",
+      "classification": "fact",
+      "text": "本书现有三处AI平台清单互不一致：附录工具一列为 ChatGPT、豆包、文心助手、通义千问、Kimi；第六章 GEO 之战列为 DeepSeek、文心一言、通义千问、豆包、Kimi；前言列为 DeepSeek、文心一言、通义千问、豆包。附录是三处中唯一不含 DeepSeek、也是唯一含 ChatGPT 的一处。",
+      "source_ids": ["source-3", "source-4", "source-5"]
+    },
+    {
+      "id": "claim-6",
+      "classification": "inference",
+      "text": "DeepSeek 是该榜单中唯一进入前三的AI搜索赛道产品。对以观测AI推荐行为为目的的认知基线工具而言，搜索类入口与本书第六章 GEO 议题的相关度高于通用助手，因此遗漏 DeepSeek 造成的偏差，大于其用户规模排名本身所显示的程度。此为提案人的推断，非任何来源的原文结论。",
+      "source_ids": ["source-1"]
+    },
+    {
+      "id": "claim-7",
+      "classification": "inference",
+      "text": "书中「文心助手（依托百度App，月活超2亿）」这一表述未出现在 QuestMobile 2026年6月AI原生App月活前十榜单中，且未给出可核验来源，其口径很可能混淆了百度App整体月活与文心一言App自身月活。在补上可核验来源之前，不宜作为读者选择测试平台的依据。本提案只能证明该数据未进榜且无来源，不能证明该数据为假。",
+      "source_ids": ["source-1", "source-3"]
+    },
+    {
+      "id": "claim-8",
+      "classification": "author-view",
+      "text": "平台清单是全书正文中最容易过时的部分，不应固化在正文里。建议改为必测、建议、海外三层结构，并把每层的数据日期与来源一并标注；更进一步，建议维护者把清单从正文抽出为附录中的独立表格，使其可按季度更新而不牵动正文。这是提案人的编辑建议，不是对既有来源的引述。",
+      "source_ids": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "publisher": "QuestMobile（北京贵士信息科技有限公司）研究院",
+      "title": "QuestMobile 2026年AI应用市场发展半年报（2026-07-14 发布，核心榜单数据截至 2026-06）",
+      "url": "https://www.questmobile.com.cn/research/report/2076954943839809537/",
+      "published_or_retrieved": "2026-09-02",
+      "supports": "直接支持 claim-1、claim-2、claim-3：2026年6月AI原生App月活前十的具体数值与排名、榜单不含手机厂商预装AI助手的口径说明、手机厂商AI应用与PC网页端AI应用的规模及同比。",
+      "limitations": "第三方商业数据服务商的抽样监测口径，非政府统计。MAU 仅代表用户规模，不代表对品牌推荐结果的影响力。报告公开版为摘要，完整方法论未公开。榜单不含手机厂商预装助手，故不能据此推断全部AI入口的覆盖格局。数据以月为单位波动，出版时可能已过时。"
+    },
+    {
+      "id": "source-2",
+      "publisher": "中国互联网络信息中心（CNNIC）",
+      "title": "第57次《中国互联网络发展状况统计报告》（2026-02-05 发布，调查数据截至 2025-12）",
+      "url": "https://cnnic.cn/n4/2026/0304/c88-11549.html",
+      "published_or_retrieved": "2026-09-02",
+      "supports": "直接支持 claim-4：中国生成式人工智能产品用户规模6.02亿、同比增长141.7%，以及同期网民规模11.25亿。用于给出生成式AI已覆盖过半网民这一背景量级。",
+      "limitations": "官方抽样调查口径，定义为过去六个月内使用过生成式AI产品，与 QuestMobile 的App月活口径不可直接比较，也不应相加。本提案未直接引用报告原文表述以外的推算值；提案中「占网民约53.5%」系由 6.02亿 除以 11.25亿 简单推算得出，非报告原文数字。发布页为报告索引页，全文为PDF。"
+    },
+    {
+      "id": "source-3",
+      "publisher": "《信任力》仓库（flyingpig707/PowerofTrust）",
+      "title": "book/14-附录 落地工具.md —— 工具一「认知基线」步骤2 的平台建议清单",
+      "url": "https://github.com/flyingpig707/PowerofTrust/blob/main/book/14-%E9%99%84%E5%BD%95%20%E8%90%BD%E5%9C%B0%E5%B7%A5%E5%85%B7.md",
+      "published_or_retrieved": "2026-09-02",
+      "supports": "直接支持 claim-5 与 claim-7：提供本提案所指原文段落的可核验定位，即 ChatGPT、豆包、文心助手、通义千问、Kimi 这一清单，以及「文心助手依托百度App，月活超2亿」的表述。",
+      "limitations": "仓库未附加整书开源许可证，此处仅作定位引用，不复制正文段落。文件内容随 main 分支变化，引用未锁定到具体 commit。"
+    },
+    {
+      "id": "source-4",
+      "publisher": "《信任力》仓库（flyingpig707/PowerofTrust）",
+      "title": "book/06-GEO之战.md —— 建立AI认知基线处的平台清单（DeepSeek、文心一言、通义千问、豆包、Kimi）",
+      "url": "https://github.com/flyingpig707/PowerofTrust/blob/main/book/06-GEO%E4%B9%8B%E6%88%98.md",
+      "published_or_retrieved": "2026-09-02",
+      "supports": "直接支持 claim-5：证明第六章的平台清单含 DeepSeek 而不含 ChatGPT，与附录工具一相反，构成全书内部不一致。",
+      "limitations": "仅作定位引用，不复制正文。未锁定到具体 commit。"
+    },
+    {
+      "id": "source-5",
+      "publisher": "《信任力》仓库（flyingpig707/PowerofTrust）",
+      "title": "book/01-前言 信任缘起AI时代品牌竞争新规则.md —— 前言中的AI助手举例（DeepSeek、文心一言、通义千问、豆包）",
+      "url": "https://github.com/flyingpig707/PowerofTrust/blob/main/book/01-%E5%89%8D%E8%A8%80%20%E4%BF%A1%E4%BB%BB%E7%BC%98%E8%B5%B7AI%E6%97%B6%E4%BB%A3%E5%93%81%E7%89%8C%E7%AB%9E%E4%BA%89%E6%96%B0%E8%A7%84%E5%88%99.md",
+      "published_or_retrieved": "2026-09-02",
+      "supports": "直接支持 claim-5：证明前言存在第三套平台名单，该处既不含 ChatGPT 也不含 Kimi。",
+      "limitations": "仅作定位引用，不复制正文。未锁定到具体 commit。"
+    }
+  ],
+  "submission_does_not_guarantee_adoption": true
+}

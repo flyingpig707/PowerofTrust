@@ -1,0 +1,12 @@
+{
+  "validator_version": "1.0",
+  "structure_passed": true,
+  "link_format_checked": true,
+  "claims_classified": true,
+  "sources_and_limits_recorded": true,
+  "privacy_and_secrets_checked": true,
+  "copyright_checked": true,
+  "human_authorization_confirmed": true,
+  "book_directory_unchanged": true,
+  "notes": ""
+}
